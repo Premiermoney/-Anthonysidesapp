@@ -1,6 +1,6 @@
 ---
 title: Storing workflow data as artifacts
-shortTitle: Storing workflow artifacts
+shortTitle: Store artifacts
 intro: Artifacts allow you to share data between jobs in a workflow and store data once that workflow has completed.
 redirect_from:
   - /articles/persisting-workflow-data-using-artifacts
@@ -55,6 +55,14 @@ To share data between jobs:
 * **Downloading files**: You can only download artifacts that were uploaded during the same workflow run. When you download a file, you can reference it by name.
 
 The steps of a job share the same environment on the runner machine, but run in their own individual processes. To pass data between steps in a job, you can use inputs and outputs. For more information about inputs and outputs, see "[Metadata syntax for {% data variables.product.prodname_actions %}](/articles/metadata-syntax-for-github-actions)."
+
+{% ifversion actions-caching %}
+
+{% data reusables.actions.comparing-artifacts-caching %}
+
+For more information on dependency caching, see "[Caching dependencies to speed up workflows](/actions/using-workflows/caching-dependencies-to-speed-up-workflows#comparing-artifacts-and-dependency-caching)."
+
+{% endif %}
 
 ## Uploading build and test artifacts
 

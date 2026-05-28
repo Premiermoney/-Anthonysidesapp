@@ -1,9 +1,10 @@
 ---
 title: Troubleshooting SAML authentication
 shortTitle: Troubleshoot SAML SSO
-intro: If you use SAML single sign-on (SSO) and people are unable to authenticate to access {% data variables.product.product_location %}, you can troubleshoot the problem.
+intro: 'If you use SAML single sign-on (SSO) and people are unable to authenticate to access {% data variables.product.product_location %}, you can troubleshoot the problem.'
 versions:
   ghes: '*'
+  ghec: '*'
 type: how_to
 topics:
   - Accounts
@@ -15,6 +16,7 @@ topics:
   - Troubleshooting
 ---
 
+{% ifversion ghes %}
 ## About problems with SAML authentication
 
 {% data variables.product.product_name %} logs error messages for failed SAML authentication in the authentication log at _/var/log/github/auth.log_. You can review responses in this log file, and you can also configure more verbose logging.
@@ -54,7 +56,7 @@ You can configure {% data variables.product.product_name %} to write verbose deb
 Some output in _auth.log_ may be Base64-encoded. You can access the administrative shell and use the `base64` utility on {% data variables.product.product_location %} to decode these responses. For more information, see "[Accessing the administrative shell (SSH)](/admin/configuration/configuring-your-enterprise/accessing-the-administrative-shell-ssh)."
 
 ```shell
-$ base64 --decode <em>ENCODED OUTPUT</em>
+$ base64 --decode ENCODED_OUTPUT
 ```
 
 ## Error: "Another user already owns the account"
@@ -100,3 +102,10 @@ Audience is invalid. Audience attribute does not match https://<em>YOUR-INSTANCE
 ```
 
 Ensure that you set the value for `Audience` on your IdP to the `EntityId` for {% data variables.product.product_location %}, which is the full URL to your instance. For example, `https://ghe.corp.example.com`.
+{% endif %}
+
+{% data reusables.saml.current-time-earlier-than-notbefore-condition %}
+
+{% ifversion ghec %}
+{% data reusables.saml.authentication-loop %}
+{% endif %}

@@ -1,6 +1,6 @@
 ---
-title: Secret Scanning
-intro: Use the Secret Scanning API to retrieve and update secret alerts from a repository.
+title: シークレット スキャン
+intro: シークレット スキャン API を使うと、リポジトリからシークレット アラートを取得して更新することができます。
 versions:
   ghes: '*'
   ghae: '*'
@@ -10,14 +10,20 @@ topics:
 miniTocMaxHeadingLevel: 3
 redirect_from:
   - /rest/reference/secret-scanning
+ms.openlocfilehash: d17aa63bb3d7e71adb310c66cabb05a83776b78f
+ms.sourcegitcommit: fcf3546b7cc208155fb8acdf68b81be28afc3d2d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/10/2022
+ms.locfileid: '147880125'
 ---
-
 {% data reusables.secret-scanning.api-beta %}
 
-The {% data variables.product.prodname_secret_scanning %} API lets you{% ifversion fpt or ghec or ghes > 3.1 or ghae %}:
+## シークレット スキャン API について
 
-- Enable or disable {% data variables.product.prodname_secret_scanning %}{% if secret-scanning-push-protection %} and push protection{% endif %} for a repository. For more information, see "[Repositories](/rest/reference/repos#update-a-repository)" and expand the "Properties of the `security_and_analysis` object" section in the REST API documentation.
-- Retrieve and update {% data variables.product.prodname_secret_scanning_GHAS %} alerts from a repository. For further details, see the sections below.
-{%- else %} retrieve and update {% data variables.product.prodname_secret_scanning %} alerts from a repository.{% endif %}
+{% data variables.product.prodname_secret_scanning %} API を使うと、次のことができます。
+
+- リポジトリの {% data variables.product.prodname_secret_scanning %}{% ifversion secret-scanning-push-protection %} とプッシュ保護 {% endif %} を有効または無効にします。 詳細については、「[リポジトリ](/rest/repos/repos#update-a-repository)」を参照し、REST API ドキュメントの "`security_and_analysis` オブジェクトのプロパティ" セクションを展開します。
+- リポジトリから {% data variables.product.prodname_secret_scanning_GHAS %} アラートを取得して更新します。 詳細については、以下のセクションを参照してください。
 
 {% data variables.product.prodname_secret_scanning %} の詳細については、「[{% data variables.product.prodname_secret_scanning %} について](/code-security/secret-security/about-secret-scanning)」を参照してください。

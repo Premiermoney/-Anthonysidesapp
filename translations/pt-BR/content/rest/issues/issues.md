@@ -1,6 +1,6 @@
 ---
 title: Problemas
-intro: 'A API de Problemas permite que você visualize e gerencie problemas, incluindo responsáveis de problemas, comentários, etiquetas e marcos.'
+intro: ''
 versions:
   fpt: '*'
   ghes: '*'
@@ -9,15 +9,13 @@ versions:
 topics:
   - API
 miniTocMaxHeadingLevel: 3
+ms.openlocfilehash: 8d9d79c8f72199108dfbd1f3e2188d3956d06eeb
+ms.sourcegitcommit: 5f9527483381cfb1e41f2322f67c80554750a47d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/11/2022
+ms.locfileid: '147882260'
 ---
+## Sobre a API de Problemas
 
-### Tipos de mídia personalizados para problemas
-
-Estes são os tipos de mídia compatíveis para problemas.
-
-    application/vnd.github.VERSION.raw+json
-    application/vnd.github.VERSION.text+json
-    application/vnd.github.VERSION.html+json
-    application/vnd.github.VERSION.full+json
-
-Para obter mais informações sobre os tipos de mídia, consulte "[Tipos de mídia personalizados](/rest/overview/media-types)".
+{% data reusables.pull_requests.issues-media-types %}

@@ -1,79 +1,93 @@
 ---
 title: Personalizar el perfil de tu organización
-intro: Puedes compartir la información sobre tu organización si personalizas el perfil de esta.
+intro: Puedes compartir la información sobre tu organización si personalizas el perfil de la misma.
 versions:
   fpt: '*'
   ghec: '*'
   ghes: '>3.3'
-  ghae: issue-4749
 topics:
   - Organizations
-shortTitle: Personalizar el perfil de una organización
+shortTitle: Customize organization profile
+ms.openlocfilehash: 66f234427f6e47213578e8f906e123d98c07a092
+ms.sourcegitcommit: 47bd0e48c7dba1dde49baff60bc1eddc91ab10c5
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/05/2022
+ms.locfileid: '147447934'
 ---
+## Acerca de la página de perfil de tu organización
 
-{% if org-profile-pin-private %}
+{% ifversion org-profile-pin-private %} Puedes personalizar la página de información general de la organización para mostrar un LÉAME y repositorios anclados dedicados a usuarios públicos o miembros de la organización.
 
-## About your organization's profile page
+![Imagen de la página de perfil de una organización pública](/assets/images/help/organizations/public_profile.png)
 
-You can customize your organization's Overview page to show content dedicated to public users or members of the organization. Members of your organization who are signed into {% data variables.product.prodname_dotcom %}, are shown a member view when they visit your organization's profile page. Users who are not members of your organization will be shown a public view.
+Los miembros de la organización que hayan iniciado sesión en {% data variables.product.prodname_dotcom %} pueden seleccionar una vista `member` o `public` del LÉAME y los repositorios anclados cuando visiten la página de perfil de la organización. 
 
-![Image of an organization profile page](/assets/images/help/organizations/new_organization_page.png)
-{% endif %}
+![Imagen de un conmutador de contexto de vista de página de perfil de organización pública](/assets/images/help/organizations/profile_view_switcher_public.png)
+
+La vista predeterminada es `member` si hay un LÉAME o repositorios anclados solo para miembros y `public` de lo contrario.
+
+![Imagen de la página de perfil de una organización solo para miembros](/assets/images/help/organizations/member_only_profile.png)
+
+A los usuarios que no son miembros de la organización se les mostrará una vista `public`.
 
 ### Repositorios anclados
 
-You can give users easy access to important or frequently used repositories, by choosing up to six repositories for public users and six repositories for members of the organization. Once you pin repositories to your organization profile, the "Pinned" section is shown above the "Repositories" section of the profile page.
+Puedes proporcionar a los usuarios acceso fácil a repositorios importantes o usados con frecuencia, eligiendo hasta seis repositorios para usuarios públicos y seis para los miembros de la organización. Una vez anclados repositorios al perfil de la organización, la sección "Pinned" (Anclado) se muestra encima de la sección "Repositories" (Repositorios) de la página de perfil.
 
-Only organization owners can pin repositories. For more information, see "[Pinning repositories to your organization's profile](#pinning-repositories-to-your-organizations-profile)."
+Solo los propietarios de la organización pueden anclar repositorios. Para obtener más información, consulta "[Anclaje de repositorios al perfil de la organización](#pinning-repositories-to-your-organizations-profile)".
 
-### Organization profile READMEs
+### Archivos Léeme del perfil de la organización
 
-You can share information about how to engage with your organization by creating an organization profile README for both public users and members of the organization. {% data variables.product.prodname_dotcom %} te muestra el README del perfil de tu organización en la pestaña de "Resumen" de tu organización.
+{% endif %}
 
-You can choose what information to include in your organization profile README. Here are some examples of information that may be helpful.
+Puedes compartir información sobre cómo interactuar con tu organización creando un archivo Léeme del perfil de la organización para usuarios públicos y miembros de la organización. {% data variables.product.prodname_dotcom %} te muestra el README del perfil de tu organización en la pestaña de "Resumen" de tu organización.
+
+Puedes elegir el tipo de información que incluirás en el archivo Léeme del perfil de tu organización. Estos son algunos ejemplos de información que pueden resultar útiles.
 
 - Una sección de "Acerca de" que describa a tu organización
 - Lineamientos para obtener ayuda en la organización
 
-Puedes formatear el texto e incluir emojis, imágenes y GIFs en el README del perfil de tu organización si utilizas el Marcado Enriquecido de {% data variables.product.company_short %}. Para obtener más información, consulta la sección "[Iniciar con la escritura y el formato en {% data variables.product.prodname_dotcom %}](/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)".
+Puedes formatear el texto e incluir emojis, imágenes y GIFs en el README del perfil de tu organización si utilizas el Marcado Enriquecido de {% data variables.product.company_short %}. Para más información, vea "[Introducción a la escritura y el formato en {% data variables.product.prodname_dotcom %}](/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)".
 
-## Adding a public organization profile README
+## Incorporación de un archivo Léeme del perfil de la organización
 
-1. Si tu organización aun no tiene un repositorio público de `.github`, crea un repositorio público de `.github`.
-2. En el repositorio de `.github` de tu organización, crea un archivo de `README.md` en la carpeta `profile`.
-3. Confirma los cambios al archivo `README.md`. The content of the `README.md` will appear on your organization's public profile.
+1. Si la organización todavía no tiene un repositorio `.github` público, cree un repositorio `.github` público.
+2. En el repositorio `.github` de la organización, cree un archivo `README.md` en la carpeta `profile`.
+3. Confirme los cambios en el archivo `README.md`. El contenido de `README.md` aparecerá en el perfil público de la organización.
 
-   ![Image of an organization's public README](/assets/images/help/organizations/org_public_readme.png)
+   ![Imagen del archivo Léeme público de una organización](/assets/images/help/organizations/org_public_readme.png)
 
-{% if org-profile-pin-private %}
+{% ifversion org-profile-pin-private %}
 
-## Adding a member-only organization profile README
+## Incorporación de un archivo Léeme del perfil de la organización solo para miembros
 
-1. If your organization does not already have a `.github-private` repository, create a public `.github-private` repository. This action can be performed by any user that has write access to that repository.
-2. In your organization's `.github-private` repository, create a `README.md` file in the `profile` folder.
-3. Confirma los cambios al archivo `README.md`. The content of the `README.md` will be displayed in the member view of your organization's profile.
+1. Si la organización todavía no tiene un repositorio `.github-private`, crea un repositorio privado llamado `.github-private`. 
+2. En el repositorio `.github-private` de la organización, cree un archivo `README.md` en la carpeta `profile`.
+3. Confirme los cambios en el archivo `README.md`. El contenido de `README.md` se mostrará en la vista de miembro del perfil de la organización.
 
-   ![Image of an organization's private README](/assets/images/help/organizations/org_member_readme.png)
+   ![Imagen del LÉAME solo para miembros de una organización](/assets/images/help/organizations/org_member_readme.png)
 
-## Pinning repositories to your organization's profile
+## Anclaje de repositorios al perfil de la organización
 
-You can pin repositories that you want to feature, such as those that are frequently used, to your organization's profile page. To choose which repositories to pin to your organization's profile, you must be an organization owner or administrator.
+Puedes anclar repositorios que quieras incluir, como los que se usan con frecuencia, en la página de perfil de la organización. Para elegir los repositorios que se van a anclar al perfil de la organización, debes ser propietario de la organización.
 
-1. Navigate to your organization's profile page.
-2. In the right sidebar of the page in the {% octicon "eye" aria-label="The eye octicon" %} "View as" link, choose the **Public** or **Member** profile view from the dropdown menu.
+1. Ves a la página de perfil de la organización.
+2. En la barra lateral derecha de la página del vínculo {% octicon "eye" aria-label="The eye octicon" %} "View as" (Ver como), elige la vista del perfil **Public** (Público) o **Member** (Miembro) en el menú desplegable.
 
-   ![Image of the organization profile view dropdown](/assets/images/help/organizations/org_profile_view.png)
+   ![Imagen de la lista desplegable de la vista de perfil de la organización](/assets/images/help/organizations/org_profile_view.png)
 
-3. In the pinned repositories section, select **Customize pins**.
+3. En la sección de repositorios anclados, selecciona **Customize pins** (Personalizar anclajes).
 
-   ![Image of the customize pins link](/assets/images/help/organizations/customize_pins_link.png)
+   ![Imagen del vínculo para personalizar anclajes](/assets/images/help/organizations/customize_pins_link.png)
 
-   - If you haven't yet pinned any repositories to your organization's profile, you'll need to instead click **pin repositories** in the right sidebar of the profile page. ![Image of pin repositories link in right sidebar](/assets/images/help/organizations/pin_repositories_link.png)
+   - Si aún no has anclado ningún repositorio al perfil de la organización, deberás hacer clic en **pin repositories** (anclar repositorios) en la barra lateral derecha de la página del perfil.
+   ![Imagen del vínculo para anclar repositorios en la barra lateral derecha](/assets/images/help/organizations/pin_repositories_link.png)
 
-4. In the "Edit pinned repositories" dialog box, select a combination of up to six public, {% ifversion not fpt %}private, or internal{% else %}or private{% endif %} repositories to display.
+4. En el cuadro de diálogo "Edit pinned repositories" (Editar repositorios anclados), selecciona una combinación de hasta seis repositorios públicos, {% ifversion not fpt %}privados o internos{% else %}o privados{% endif %} para mostrar.
 
-   ![Image of pinned repo dialog](/assets/images/help/organizations/pinned_repo_dialog.png)
+   ![Imagen del cuadro de diálogo del repositorio anclado](/assets/images/help/organizations/pinned_repo_dialog.png)
 
-5. Haz clic en **Save pins (Guardar anclados)**.
+5. Haga clic en **Save pins**.
 
 {% endif %}

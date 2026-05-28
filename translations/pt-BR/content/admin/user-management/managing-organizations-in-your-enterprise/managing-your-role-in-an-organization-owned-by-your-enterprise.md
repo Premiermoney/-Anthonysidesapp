@@ -9,35 +9,42 @@ topics:
   - Administrator
   - Enterprise
   - Organizations
-shortTitle: Gerenciar as funções da sua organização
+shortTitle: Manage your organization roles
+ms.openlocfilehash: e7a95602fe103dcbccb80bc2dfec6a67f8b4b312
+ms.sourcegitcommit: 5f9527483381cfb1e41f2322f67c80554750a47d
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/11/2022
+ms.locfileid: '147884234'
 ---
-
-{% note %}
-
-**Observação:** A habilidade dos proprietários da empresa de gerenciar sua função em uma organização que pertence à empresa está em fase beta e sujeita a alterações.
-
-{% endnote %}
-
 ## Sobre o gerenciamento de funções
 
 Você pode optar por participar de uma organização pertencente à sua empresa como integrante ou como proprietário da organização, mudar a sua função dentro da organização ou sair da organização.
 
-{% warning %}
+{% ifversion ghec %} {% warning %}
 
-**Aviso**: Se uma organização usar o SCIM para fornecer usuários, entrar na organização desta forma poderia ter consequências não desejadas. For more information, see "[About SCIM for organizations](/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations)."
+**Aviso**: se uma organização usa o SCIM para provisionar usuários, o ingresso na organização dessa forma pode ter consequências não intencionais. Para obter mais informações, confira "[Sobre o SCIM para organizações](/organizations/managing-saml-single-sign-on-for-your-organization/about-scim-for-organizations)".
 
-{% endwarning %}
+{% endwarning %} {% endif %}
+
+Para obter informações sobre como gerenciar as funções de outras pessoas em uma organização, confira "[Como gerenciar a associação em sua organização](/organizations/managing-membership-in-your-organization)" e "[Como gerenciar o acesso das pessoas com funções à sua organização](/organizations/managing-peoples-access-to-your-organization-with-roles)".
 
 ## Gerenciando seu papel com as configurações corporativas
 
 Você pode participar de uma organização pertencente à sua empresa e gerenciar sua função na organização, diretamente nas configurações da conta corporativa.
 
-Se uma organização aplivar o logon único do SAML (SSO), você não poderá usar as configurações corporativas para participar da organização. Em vez disso, você deve participar da organização usando o provedor de identidade (IdP) dessa organização. Em seguida, você pode gerenciar a sua função nas configurações da sua empresa. Para obter mais informações, consulte[Entrando para uma organização que apliva o SAML SSO](#joining-an-organization-that-enforces-saml-sso)".
+{% ifversion ghec %}
+
+Se uma organização aplivar o logon único do SAML (SSO), você não poderá usar as configurações corporativas para participar da organização. Em vez disso, você deve participar da organização usando o provedor de identidade (IdP) dessa organização. Em seguida, você pode gerenciar a sua função nas configurações da sua empresa. Para obter mais informações, confira "[Como ingressar em uma organização que impõe o SSO do SAML](#joining-an-organization-that-enforces-saml-sso)".
+
+{% endif %}
 
 {% data reusables.enterprise-accounts.access-enterprise %}
-1. Na guia **Organizações**, à direita da organização em que você deseja gerenciar sua função, selecione o menu suspenso {% octicon "gear" aria-label="The gear icon" %} e clique na ação que você deseja assumir.
+1. Na guia **Organizações**, à direita da organização na qual deseja gerenciar sua função, selecione o menu suspenso {% octicon "gear" aria-label="The gear icon" %} e clique na ação que deseja executar.
 
    ![Captura de tela do menu suspenso para o ícone de engrenagem de uma organização](/assets/images/help/business-accounts/change-role-in-org.png)
+
+{% ifversion ghec %}
 
 ## Entrando para uma organização que apliva o SAML SSO
 
@@ -51,4 +58,6 @@ Se uma organização aplicar o SSO SAML, você não poderá usar as configuraç�
 
     `https://github.com/orgs/ORGANIZATION/sso`
 
-Depois de entrar na organização, você poderá usar as configurações corporativas para gerenciar a sua função na organização como, por exemplo, se tornar proprietário da organização. Para obter mais informações, consulte "[Gerenciando sua função com as configurações corporativas](#managing-your-role-with-the-enterprise-settings)".
+Depois de entrar na organização, você poderá usar as configurações corporativas para gerenciar a sua função na organização como, por exemplo, se tornar proprietário da organização. Para obter mais informações, confira "[Como gerenciar sua função com as configurações da empresa](#managing-your-role-with-the-enterprise-settings)".
+
+{% endif %}

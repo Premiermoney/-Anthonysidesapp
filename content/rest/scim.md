@@ -1,8 +1,7 @@
 ---
 title: SCIM
-intro: 'You can control and manage your GitHub organization members access using SCIM API.'
+intro: You can control and manage your GitHub organization members access using SCIM API.
 versions:
-  fpt: '*'
   ghec: '*'
 topics:
   - API
@@ -10,6 +9,8 @@ miniTocMaxHeadingLevel: 3
 redirect_from:
   - /rest/reference/scim
 ---
+
+## About the SCIM API
 
 ### SCIM Provisioning for Organizations
 

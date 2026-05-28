@@ -9,9 +9,14 @@ topics:
 redirect_from:
   - /github/getting-started-with-github/faq-about-changes-to-githubs-plans
   - /github/getting-started-with-github/learning-about-github/faq-about-changes-to-githubs-plans
-shortTitle: Cambios en los palnes de GitHub
+shortTitle: Changes to GitHub plans
+ms.openlocfilehash: 9f69f049edb67f9079944189eab0a16f7f10cd91
+ms.sourcegitcommit: 47bd0e48c7dba1dde49baff60bc1eddc91ab10c5
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/05/2022
+ms.locfileid: '147431916'
 ---
-
 ## ¿Qué cambios en precios y planes para GitHub se anunciaron en el 14 de abril?
 
 GitHub anunció los siguientes cambios en sus planes y precios:
@@ -28,11 +33,11 @@ GitHub anunció los siguientes cambios en sus planes y precios:
 
 ## ¿Cómo puedo mejorar mi plan?
 
-To upgrade your personal account's plan, see "[Upgrading your personal account's subscription](/billing/managing-billing-for-your-github-account/upgrading-your-github-subscription#upgrading-your-personal-accounts-subscription)." Para mejorar el plan de tu organización, consulta "[Mejorar la suscripción de tu organización](/billing/managing-billing-for-your-github-account/upgrading-your-github-subscription#upgrading-your-organizations-subscription)".
+Para actualizar el plan de la cuenta personal, consulta "[Actualización de la suscripción de la cuenta personal](/billing/managing-billing-for-your-github-account/upgrading-your-github-subscription#upgrading-your-personal-accounts-subscription)". Para actualizar el plan de la organización, vea "[Actualización de la suscripción de la organización](/billing/managing-billing-for-your-github-account/upgrading-your-github-subscription#upgrading-your-organizations-subscription)".
 
 ## ¿Cómo puedo bajar mi plan?
 
-To downgrade your personal account's plan, see "[Downgrading your personal account's subscription](/billing/managing-billing-for-your-github-account/downgrading-your-github-subscription#downgrading-your-personal-accounts-subscription)." Para bajar el plan de tu organización, consulta "[Bajar la suscripción de tu organización](/billing/managing-billing-for-your-github-account/downgrading-your-github-subscription#downgrading-your-organizations-subscription)".
+Para cambiar a una versión anterior el plan de la cuenta personal, consulta "[Cambio a una versión anterior de la suscripción de la cuenta personal](/billing/managing-billing-for-your-github-account/downgrading-your-github-subscription#downgrading-your-personal-accounts-subscription)". Para cambiar a una versión anterior el plan de la organización, vea "[Cambio a una versión anterior de la suscripción de la organización](/billing/managing-billing-for-your-github-account/downgrading-your-github-subscription#downgrading-your-organizations-subscription)".
 
 ## Si bajo de categoría desde GitHub Team o un plan tradicional hacia GitHub Free, ¿qué características perderé?
 - Revisores requeridos en repositorios privados
@@ -44,11 +49,11 @@ To downgrade your personal account's plan, see "[Downgrading your personal accou
 - Revisores múltiples para solicitudes de extracción en repositorios privados
 - Borradores de solicitudes de extracción en repositorios privados
 - Referencias auto-vinculadas en repositorios privados
-- Soporte estándar
+- Soporte técnico Standard
 
 ## ¿Cómo puedo crear una organización de GitHub Free o GitHub Team?
 
-Si tienes una cuenta en GitHub, crea una nueva organización en nuestra [página de plan de equipo](https://github.com/organizations/plan). Si no tienes una cuenta en GitHub, puedes [crear una en nuestra página principal](https://github.com/) y se te pedirá crear una organización durante el proceso de registro.
+Si tiene una cuenta de GitHub, cree una organización en nuestra [página de plan de equipo](https://github.com/organizations/plan). Si no tiene una cuenta en GitHub, puede [crear una en nuestra página principal](https://github.com/) y, durante el proceso de registro, se le pedirá crear una organización.
 
 ## ¿Cómo puedo comparar las características de cada plan?
 
@@ -64,15 +69,15 @@ Los clientes que están pagando anualmente por los planes de Pro o Team y se reg
 
 ## ¿Cuál es la diferencia entre GitHub Free para desarrolladores individuales y GitHub Free para organizaciones?
 
-Para encontrar los detalles de las diferencias entre los productos de GitHub free, consulta la sección "[productos de {% data variables.product.prodname_dotcom %}](/articles/github-s-products)".
+Para más información sobre las diferencias de cada producto gratis de GitHub, vea "[Productos de {% data variables.product.prodname_dotcom %}](/articles/github-s-products)".
 
 ## ¿Cómo puedo tener más minutos de Actions si necesito más que la cantidad que se designa en el plan de GitHub Team?
 
-La mayoría de los equipos pequeños utiliza menos de 3,000 minutos mensuales de Actions, pero algunos equipos podrían utilizar más. Si tu equipo necesita minutos adicionales para repositorios privados, puedes incrementar tu límite de gastos para GitHub Actions. Los minutos de Actions y almacenamiento de paquetes siguen siendo gratuitos para tus repositorios públicos. Para obtener más información, consulta la sección "[Administrar tu límite de gastos para GitHub Actions](/billing/managing-billing-for-github-actions/managing-your-spending-limit-for-github-actions)".
+La mayoría de los equipos pequeños utiliza menos de 3,000 minutos mensuales de Actions, pero algunos equipos podrían utilizar más. Si tu equipo necesita minutos adicionales para repositorios privados, puedes incrementar tu límite de gastos para GitHub Actions. Los minutos de Actions y almacenamiento de paquetes siguen siendo gratuitos para tus repositorios públicos. Para más información, vea "[Administración del límite de gasto para Acciones de GitHub](/billing/managing-billing-for-github-actions/managing-your-spending-limit-for-github-actions)".
 
 ## ¿Cómo me afectan los cambios en el límite de plazas?
 
-Ahora que {% data variables.product.prodname_team %} no requiere de un mínimo de plazas, si utilizas menos de cinco en tu organización, podrás eliminar las plazas pagadas para reducir tu cuenta. Para obtener más información, consulta la sección "[Bajar la categoría de tu suscripción de {% data variables.product.prodname_dotcom %}](/billing/managing-billing-for-your-github-account/downgrading-your-github-subscription#removing-paid-seats-from-your-organization)".
+Ahora que {% data variables.product.prodname_team %} no requiere de un mínimo de plazas, si utilizas menos de cinco en tu organización, podrás eliminar las plazas pagadas para reducir tu cuenta. Para más información, vea "[Cambio de la suscripción a {% data variables.product.prodname_dotcom %} a una versión anterior](/billing/managing-billing-for-your-github-account/downgrading-your-github-subscription#removing-paid-seats-from-your-organization)".
 
 ## ¿Cambiará algo para los equipos con plan de GitHub Team para código abierto?
 
@@ -80,11 +85,11 @@ Si tu cuenta de organización utiliza el plan de GitHub Team para código abiert
 
 ## ¿Qué es el Soporte de la Comunidad de GitHub?
 
-El Soporte de la Comunidad de GitHub incluye soporte a través de nuestro [Foro de la Comunidad](https://github.community/), en donde puedes buscar soluciones de la comunidad de GitHub, hacer preguntas nuevas, y compartir ideas. Los Ingenieros de Soporte de GitHub Team son quienes atienden la parte de Soporte de la Comunidad de Github, y quienes moderan el Foro de la Comunidad en conjunto con nuestros miembros más activos en la misma. Si necesitas reportar spam, algún tipo de abuso, o si tienes problemas con el acceso a tu cuenta, puedes enviar un mensaje a nuestro Equipo de Soporte en https://support.github.com/..
+El Soporte de la Comunidad de GitHub incluye soporte a través de nuestros [debates de {% data variables.product.prodname_github_community %}](https://github.com/orgs/community/discussions), en donde puedes buscar soluciones de la comunidad de GitHub, hacer preguntas nuevas, y compartir ideas. Los Ingenieros de Soporte de GitHub Team son quienes atienden la parte de Soporte de la Comunidad de GitHub, y quienes moderan {% data variables.product.prodname_github_community %} en conjunto con nuestros miembros más activos en la comunidad. Si necesita notificar spam, algún tipo de abuso o si tiene problemas con el acceso a la cuenta, puede enviar un mensaje a nuestro Equipo de Soporte en https://support.github.com/.
 
 ## ¿Cómo afecta este cambio a los beneficios educacionales?
 
-Los estudiantes y maestros seguirán recibiendo todos los beneficios que reciben hoy en día. GitHub continuará ofreciendo GitHub Pro como parte de los beneficios de su [Paquete de Desarrollador para Estudiantes](https://education.github.com/pack) a todos los estudiantes. Adicionalmente, los maestros continuarán teniendo acceso a GitHub Team como parte de las [Herramientas para Maestros](https://education.github.com/toolbox).
+Los estudiantes y maestros seguirán recibiendo todos los beneficios que reciben hoy en día. GitHub seguirá ofreciendo GitHub Pro como parte de sus ventajas de [Student Developer Pack](https://education.github.com/pack) a todos los alumnos. Además, los profesores seguirán teniendo acceso a GitHub Team como parte del [Cuadro de herramientas del profesor](https://education.github.com/toolbox).
 
 ## ¿Cómo me afecta esto si actualmente pago por factura?
 
@@ -92,6 +97,6 @@ Si actualmente eres un cliente que paga por factura, contacta por correo electr�
 
 ## ¿Cómo va afectar esto a los usuarios y organizaciones que se encuentran en regiones donde se aplican las sanciones del gobierno de los EE.UU?
 
-Debido a los controles de comercio y restricciones legales de los EE.UU. , GitHub no puede proporcionar servicios para repositorios privados y servicios pagados a cuentas que se encuentren en las zonas sancionadas por los EE.UU. Sin embargo, GitHub ha preservado el acceso a los servicios gratuitos para repositorios públicos. Por favor lee sobre [GitHub y los Controles Comerciales](/free-pro-team@latest/github/site-policy/github-and-trade-controls) para obtener más información.
+Debido a los controles de comercio y restricciones legales, GitHub no puede proporcionar servicios para repositorios privados y servicios pagados a cuentas que se encuentren en las zonas sancionadas por los EE.UU. Sin embargo, GitHub ha preservado el acceso a los servicios gratuitos para repositorios públicos. Lea sobre [GitHub y controles comerciales](/free-pro-team@latest/github/site-policy/github-and-trade-controls) para más información.
 
-GitHub seguirá fomentando, en conjunto con los reguladores de los EE.UU. , por contar con el mejor acceso posible a los servicios colaborativos gratuitos de código abierto para los desarrolladores en las regiones sancionadas, incluyendo repositorios privados gratuitos. Creemos que, el ofrecer estos servicios gratuitos, apoya la política externa de los EE.UU. para fomentar el flujo libre de información y libertad de expresión en estas regiones.
+GitHub seguirá fomentando, en conjunto con los reguladores de los EE.UU., el mejor acceso posible a los servicios colaborativos de código abierto para desarrolladores en regiones sancionadas, incluyendo repositorios privados gratuitos. Creemos que, el ofrecer estos servicios gratuitos, apoya la política externa de los EE.UU. de fomentar el flujo libre de información y libertad de expresión en estas regiones.

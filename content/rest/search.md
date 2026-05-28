@@ -1,6 +1,6 @@
 ---
 title: Search
-intro: 'The GitHub Search API lets you to search for the specific item efficiently.'
+intro: 'The Search API lets you to search for specific items on {% data variables.product.product_name %}.'
 versions:
   fpt: '*'
   ghes: '*'
@@ -12,6 +12,8 @@ miniTocMaxHeadingLevel: 3
 redirect_from:
   - /rest/reference/search
 ---
+
+## About the Search API
 
 The Search API helps you search for the specific item you want to find. For example, you can find a user or a specific file in a repository. Think of it the way you think of performing a search on Google. It's designed to help you find the one result you're looking for (or maybe the few results you're looking for). Just like searching on Google, you sometimes want to see a few pages of search results so that you can find the item that best meets your needs. To satisfy that need, the {% data variables.product.product_name %} Search API provides **up to 1,000 results for each search**.
 
@@ -71,6 +73,10 @@ The Search API does not support queries that:
 
 These search queries will return a "Validation failed" error message.
 
+### Search scope limits
+
+To keep the Search API fast for everyone, we limit the number of repositories a query will search through. The Search API will find up to 4,000 repositories that match your filters and return results from those repositories.
+
 ### Timeouts and incomplete results
 
 To keep the Search API fast for everyone, we limit how long any individual query
@@ -100,7 +106,7 @@ Requests can opt to receive those text fragments in the response, and every frag
 To get this metadata in your search results, specify the `text-match` media type in your `Accept` header.
 
 ```shell
-application/vnd.github.v3.text-match+json
+application/vnd.github.text-match+json
 ```
 
 When you provide the `text-match` media type, you will receive an extra key in the JSON payload called `text_matches` that provides information about the position of your search terms within the text and the `property` that includes the search term. Inside the `text_matches` array, each object includes
@@ -120,8 +126,9 @@ Using cURL, and the [example issue search](#search-issues-and-pull-requests) abo
 request would look like this:
 
 ``` shell
-curl -H 'Accept: application/vnd.github.v3.text-match+json' \
-'{% data variables.product.api_url_pre %}/search/issues?q=windows+label:bug+language:python+state:open&sort=created&order=asc'
+curl -H 'Accept: application/vnd.github.text-match+json' \
+'{% data variables.product.api_url_pre %}/search/issues?q=windows+label:bug \
++language:python+state:open&sort=created&order=asc'
 ```
 
 The response will include a `text_matches` array for each search result. In the JSON below, we have two objects in the `text_matches` array.
@@ -137,7 +144,9 @@ The second text match occurred in the `body` property of one of the issue's comm
       "object_url": "https://api.github.com/repositories/215335/issues/132",
       "object_type": "Issue",
       "property": "body",
-      "fragment": "comprehensive windows font I know of).\n\nIf we can find a commonly distributed windows font that supports them then no problem (we can use html font tags) but otherwise the '(21)' style is probably better.\n",
+      "fragment": "comprehensive windows font I know of).\n\nIf we can find a commonly
+      distributed windows font that supports them then no problem (we can use html
+      font tags) but otherwise the '(21)' style is probably better.\n",
       "matches": [
         {
           "text": "windows",
@@ -159,7 +168,9 @@ The second text match occurred in the `body` property of one of the issue's comm
       "object_url": "https://api.github.com/repositories/215335/issues/comments/25688",
       "object_type": "IssueComment",
       "property": "body",
-      "fragment": " right after that are a bit broken IMHO :). I suppose we could have some hack that maxes out at whatever the font does...\n\nI'll check what the state of play is on Windows.\n",
+      "fragment": " right after that are a bit broken IMHO :). I suppose we could
+      have some hack that maxes out at whatever the font does...\n\nI'll check
+      what the state of play is on Windows.\n",
       "matches": [
         {
           "text": "Windows",
